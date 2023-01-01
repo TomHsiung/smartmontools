@@ -7,3 +7,5 @@ sudo smartctl -a /dev/sda1
 # Runs SMART Short Self Test (usually under ten minutes).
 sudo smartctl -t short /dev/sda1
 
+# Get reports of previous tests
+sudo smartctl -l selftest /dev/sda1
