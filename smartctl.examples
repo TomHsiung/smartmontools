@@ -1,0 +1,9 @@
+# Check basic disk info, including if S.M.A.R.T. is supported
+sudo smartctl -i /dev/sda1
+
+# Prints all SMART information about the disk, or TapeAlert information about the tape drive or changer
+sudo smartctl -a /dev/sda1
+
+# Runs SMART Short Self Test (usually under ten minutes).
+sudo smartctl -t short /dev/sda1
+
